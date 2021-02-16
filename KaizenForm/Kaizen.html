@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<html>
+<head runat="server">
+    <style>
+        .sayfa {
+            position:absolute;
+            background-color: #d5f4e6;
+        }
+
+        .mainTable {
+           
+            top:200px;
+        }
+
+        .onayla {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #7ef859;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            position: absolute;
+            left: 1660px;
+            top: 940px;
+            bottom:auto;
+            z-index:auto;
+
+        }
+
+        .button:hover {
+            background-color: #7ef859;
+        }
+
+        .button:active {
+            background-color: #7ef859;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+     
+
+    </style>
+    
+        <title>KOBETSU KAIZEN FORM</title>
+</head>
+<body class="sayfa">
+    <form id="form1" runat="server" >
+        <div class="panel-heading">
+            <center><h1>KOBETSU KAIZEN FORMU </h1></center>
+        </div>
+
+
+        <div class="col-lg-12" style="display:flex">
+
+            <div class="col-lg-6">
+                <h5>
+                    <span>Atolye: </span>
+                    <input type="text" name="name" value="" />
+                </h5>
+
+                <h5>
+                    <span>Hat:</span>
+                    <input type="text" name="name" value="" />
+                </h5>
+
+                <h5>
+                    <span>Ekipman:</span>
+                    <input type="text" name="name" value="" />
+                </h5>
+            </div>
+
+            <div class="col-lg-6" style="text-align:end">
+
+                <h5>
+                    <span>Yonetici Onayi:</span>
+                    <input type="checkbox" name="name" value="" />
+                </h5>
+
+                <h5>
+                    <span>TPM Ofis Onayi:</span>
+                    <input type="checkbox" name="name" value="" />
+                </h5>
+
+                <h5>
+                    <span>TPM Ofis Onayi:</span>
+                    <input type="checkbox" name="name" value="" />
+
+                </h5>
+
+            </div>
+        </div>
+        <!--<textarea id="multiTxtKonu" name="Konu" rows="5" cols="50">  </textarea>-->
+    
+        <div class="mainTable">
+            <center>
+                <table style="width:100%"  border="1">
+                    <tr>
+                        <table style="width:50%" border="1">
+                            <tr>
+                                <th>
+                                    1.KONU(SUBJECT)
+                                    <textarea id="multiTxtKonu" name="Konu" rows="5" cols="50">  </textarea>
+                                </th>
+                                <th>
+                                    2.EKIP UYELERI(TEAM MEMBERS)
+                                    <table style="width:100%" border="1">
+
+                                        <tr>
+                                            <th>
+                                                ADI
+                                            </th>
+                                            <th>
+                                                SOYADI
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" />
+                                            </td>
+                                            <td>
+                                                <input type="text" name="name" value="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" />
+                                            </td>
+                                            <td>
+                                                <input type="text" name="name" value="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" />
+                                            </td>
+                                            <td>
+                                                <input type="text" name="name" value="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" />
+                                            </td>
+                                            <td>
+                                                <input type="text" name="name" value="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" />
+                                            </td>
+                                            <td>
+                                                <input type="text" name="name" value="" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th>
+                                    3.KAYIP TURU(LOSS KIND)
+                                    <table style="width:100%" border="1">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    ARIZA
+
+                                                </th>
+                                                <th>
+                                                    SET-UP
+                                                </th>
+                                                <th>
+                                                    K.DURUS
+                                                </th>
+                                                <th>
+                                                    FUGEI
+                                                </th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>
+                                                <span>Takım Değişimi</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Baslangic</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Hiz Guvenligi</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Is Guvenligi</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Hata-Tamir</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Kapatma</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Yonetim</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Cevre</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Uretim Hareket</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Hat Organizasyon</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Lojistik</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Temizlik</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                        </tr>
+
+                                        <td>
+                                            <span>Olcme-Ayar</span>
+                                            <input type="checkbox" name="name" value="" />
+                                        </td>
+                                        <td>
+                                            <span>Enerji</span>
+                                            <input type="checkbox" name="name" value="" />
+                                        </td>
+                                        <td>
+                                            <span>Urun</span>
+                                            <input type="checkbox" name="name" value="" />
+                                        </td>
+                                        <td>
+                                            <span>Kirlilik Kaynaklari</span>
+                                            <input type="checkbox" name="name" value="" />
+                                        </td>
+                                        <tr>
+                                            <td>
+                                                <span>Ekipman</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Bakim Maliyetinin Azaltilmasi</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Tertip Duzen</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                            <td>
+                                                <span>Malzeme Tasarrufu</span>
+                                                <input type="checkbox" name="name" value="" />
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </th>
+                            </tr>
+
+                            <tr>
+
+
+
+
+                                <th>
+                                    4.IYILESTIRILECEK KONUYU SECME NEDENI (THE CAUSE OF
+                                    CHOOSING KAIZEN SUBJECT)
+                                    <textarea id="multiTxtKonu" name="Konu" rows="5" cols="50">  </textarea>
+                                </th>
+                                <th>
+                                    5.MAKINA/EKIPMAN CALISMA PRENSIBI -PROSES AKIŞI
+                                    (MACHINE/EQUIPMENT WORKING PRINCIPLE-FLOW CHART)
+                                    <textarea id="multiTxtKonu" name="Konu" rows="5" cols="50">  </textarea>
+
+                                </th>
+                                <th>
+                                    6.HEDEFIN BELIRLENMESI
+                                    <table style="width:50%" border="1">
+                                        <tr>
+                                            <th>
+                                                Hedef Tanimi
+                                            </th>
+                                            <th>
+                                                Mevcut Deger
+                                            </th>
+                                            <th>
+                                                Hedef Deger
+                                            </th>
+                                            <th>
+                                                Tarih Araligi
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="date" name="name" value="" />
+                                            </th>
+                                        </tr>
+
+
+                                    </table>
+                                </th>
+                            <tr>
+                                <th>
+                                    7.PROBLEMIN ACIKLANMASI-ANALIZ(EXPLAINING OF THE PROBLEM-ANALYSE)
+                                    <textarea id="multiTxtKonu" name="Konu" rows="5" cols="50">  </textarea>
+                                </th>
+                                <th>
+                                    8.A AKSIYON PLANI(ACTION PLAN)
+                                    <table style="width:50%" border="1">
+                                        <tr>
+                                            <th>
+                                                NO
+                                            </th>
+                                            <th>
+                                                PROBLEM
+                                            </th>
+                                            <th>
+                                                PROBLEMLE ILGILI YAPILACAKLAR
+                                            </th>
+                                            <th>
+                                                ADI SOYADI
+                                            </th>
+                                            <th>
+                                                TARIH
+                                            </th>
+                                            <th>
+                                                SONUC
+                                            </th>
+
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                1
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                2
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                3
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                4
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                5
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                6
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                7
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                8
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                        </tr>
+
+
+                                    </table>
+                                </th>
+                                <th>
+                                    8.B PROBLEMIN COZUMUNUN ANLATILMASI(EXPLAINING SOLUTION OF THE PROBLEM)
+                                    <textarea id="multiTxtKonu" name="Konu" rows="5" cols="50">  </textarea>
+
+
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    9.A IZLEME(GRAFIKLER-CIZELGELER)(WATCHING)
+                                    <input type="image" name="name" value="" />
+                                </th>
+                                <th>
+                                    9.B HEDEF KARSILASTIRMA-MALIYET GETIRI(TARGET COMPARASION-COST-RETURN)
+                                    <table style="width:50%" border="1">
+                                        <tr>
+                                            <th>
+                                                Hedef Tanimi
+                                            </th>
+                                            <th>
+                                                Hedef
+                                            </th>
+                                            <th>
+                                                Simdi
+                                            </th>
+                                            <th>
+                                                %Sapma
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                            <th>
+                                                <input type="text" name="name" value="" />
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th>
+                                    10- STANDARTLASTIRMA(GERIYE GIDISIN ONLENMESI ICIN TAKOZ OLUSTURMA)(STANDARDIZATION)
+                                    <textarea id="multiTxtKonu" name="Konu" rows="5" cols="50">  </textarea>
+
+                                </th>
+
+                            </tr>
+                        </table>
+                </table>
+
+            </center>
+        </div>
+        
+        <div >
+            <input type="button" class="onayla"  name="name" value="ONAYLA" />
+        </div>
+        
+        
+       
+
+    </form>
+</body>
+</html>
